@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ಕನ್ನಡ PDF ಪರಿಕರಗಳು - Kannada PDF Tools</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="ancient-bg"></div>
+    
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-scroll"></i>
+                <h1>ಕನ್ನಡ PDF ಪರಿಕರಗಳು</h1>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link">ಮುಖ್ಯ</a>
+                <a href="#tools" class="nav-link">ಪರಿಕರಗಳು</a>
+                <a href="#about" class="nav-link">ನಮ್ಮ ಬಗ್ಗೆ</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">ಕನ್ನಡ PDF ಪರಿಕರಗಳು</h2>
+                    <p class="hero-subtitle">ನಿಮ್ಮ PDF ಫೈಲ್‌ಗಳನ್ನು ಸುಲಭವಾಗಿ ನಿರ್ವಹಿಸಿ</p>
+                    <div class="upload-area" id="uploadArea">
+                        <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                        <p>PDF ಫೈಲ್‌ಗಳನ್ನು ಇಲ್ಲಿ ಎಳೆದು ಬಿಡಿ ಅಥವಾ ಕ್ಲಿಕ್ ಮಾಡಿ</p>
+                        <input type="file" id="fileInput" multiple accept=".pdf,.docx,.doc" hidden>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tools" class="tools-section">
+            <div class="container">
+                <h2 class="section-title">ಪರಿಕರಗಳು</h2>
+                <div class="tools-grid">
+                    <div class="tool-card" data-tool="merge">
+                        <div class="tool-icon">
+                            <i class="fas fa-compress-arrows-alt"></i>
+                        </div>
+                        <h3>PDF ವಿಲೀನ</h3>
+                        <p>ಅನೇಕ PDF ಗಳನ್ನು ಒಂದಾಗಿ ಮಾಡಿ</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="split">
+                        <div class="tool-icon">
+                            <i class="fas fa-expand-arrows-alt"></i>
+                        </div>
+                        <h3>PDF ವಿಭಜನೆ</h3>
+                        <p>PDF ಅನ್ನು ಪ್ರತ್ಯೇಕ ಪುಟಗಳಾಗಿ ಮಾಡಿ</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="extract">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-export"></i>
+                        </div>
+                        <h3>ಪುಟಗಳನ್ನು ಹೊರತೆಗೆಯಿರಿ</h3>
+                        <p>ನಿರ್ದಿಷ್ಟ ಪುಟಗಳನ್ನು ಹೊರತೆಗೆಯಿರಿ</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="rotate">
+                        <div class="tool-icon">
+                            <i class="fas fa-redo"></i>
+                        </div>
+                        <h3>ತಿರುಗಿಸಿ</h3>
+                        <p>PDF ಪುಟಗಳನ್ನು ತಿರುಗಿಸಿ</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="crop">
+                        <div class="tool-icon">
+                            <i class="fas fa-crop"></i>
+                        </div>
+                        <h3>ಕ್ರಾಪ್ ಮಾಡಿ</h3>
+                        <p>PDF ಪುಟಗಳನ್ನು ಕ್ರಾಪ್ ಮಾಡಿ</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="word-to-pdf">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <h3>Word ನಿಂದ PDF</h3>
+                        <p>Word ಡಾಕ್ಯುಮೆಂಟ್‌ಗಳನ್ನು PDF ಗೆ ಪರಿವರ್ತಿಸಿ</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="pdf-to-word">
+                        <div class="tool-icon">
+                            <i class="fas fa-file-pdf"></i>
+                        </div>
+                        <h3>PDF ನಿಂದ Word</h3>
+                        <p>PDF ಗಳನ್ನು Word ಗೆ ಪರಿವರ್ತಿಸಿ</p>
+                    </div>
+
+                    <div class="tool-card" data-tool="delete">
+                        <div class="tool-icon">
+                            <i class="fas fa-trash"></i>
+                        </div>
+                        <h3>ಪುಟಗಳನ್ನು ಅಳಿಸಿ</h3>
+                        <p>ಅನಗತ್ಯ ಪುಟಗಳನ್ನು ತೆಗೆದುಹಾಕಿ</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="toolModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modalBody"></div>
+            </div>
+        </div>
+
+        <div id="loadingOverlay" class="loading-overlay">
+            <div class="loading-spinner">
+                <i class="fas fa-spinner fa-spin"></i>
+                <p>ಪ್ರಕ್ರಿಯೆ ನಡೆಯುತ್ತಿದೆ...</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ಕನ್ನಡ PDF ಪರಿಕರಗಳು. ಎಲ್ಲಾ ಹಕ್ಕುಗಳು ಕಾಯ್ದಿರಿಸಲಾಗಿದೆ.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
